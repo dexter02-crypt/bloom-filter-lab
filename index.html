@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Bloom Filter Lab</title><link rel="stylesheet" href="styles.css"></head>
+<body><main><header><div><div class="eyebrow">Probabilistic data structures</div><h1>Bloom<br>Filter Lab</h1></div><p class="muted">Explore a compact membership structure that permits false positives but no false negatives under correct operation.</p></header>
+<div class="grid">
+<section class="card span7"><h2>Bit-array sample</h2><svg id="bitsView" viewBox="0 0 320 80"></svg><p class="muted">256 sampled positions from the current bit array.</p></section>
+<section class="card span5"><h2>Insert / query</h2><div class="controls"><input id="item" value="golf"><button id="add" class="primary">Insert</button></div><label>Query<input id="query" value="alpha"></label><div id="answer" class="metric"></div></section>
+<section class="card span4"><div class="eyebrow">Inserted values</div><div id="count" class="metric"></div></section>
+<section class="card span4"><div class="eyebrow">Bit density</div><div id="density" class="metric"></div></section>
+<section class="card span4"><label>Bits (m)<input id="bits" type="number" value="12000" min="64" max="32768"></label><label>Hash positions (k)<input id="hashes" type="number" value="8" min="1" max="16"></label></section>
+<section class="card span12"><div class="controls"><button id="run" class="primary">Run 10,000 outside queries</button></div><div class="grid" style="margin-top:15px"><div class="span6"><div class="eyebrow">Measured false-positive rate</div><div id="measured" class="metric">—</div></div><div class="span6"><div class="eyebrow">Theoretical approximation</div><div id="theory" class="metric">—</div></div></div></section>
+</div><footer>A positive answer means “possibly present,” never “definitely present.”</footer>
+<script type="module" src="src/app.js"></script></main></body></html>

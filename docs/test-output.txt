@@ -1,0 +1,46 @@
+TAP version 13
+# Subtest: positions deterministic and bounded
+ok 1 - positions deterministic and bounded
+  ---
+  duration_ms: 1.516418
+  type: 'test'
+  ...
+# Subtest: inserted values never false negative
+ok 2 - inserted values never false negative
+  ---
+  duration_ms: 4.379016
+  type: 'test'
+  ...
+# Subtest: empty filter rejects ordinary value
+ok 3 - empty filter rejects ordinary value
+  ---
+  duration_ms: 0.171198
+  type: 'test'
+  ...
+# Subtest: theoretical rate bounded
+ok 4 - theoretical rate bounded
+  ---
+  duration_ms: 0.17273
+  type: 'test'
+  ...
+# Subtest: experiment returns reproducible counts
+ok 5 - experiment returns reproducible counts
+  ---
+  duration_ms: 8.015041
+  type: 'test'
+  ...
+# Subtest: bad configuration rejected
+ok 6 - bad configuration rejected
+  ---
+  duration_ms: 0.519013
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 72.254282
